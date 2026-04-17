@@ -1,0 +1,32 @@
+{
+  "name": "Professional Dark Blue",
+  "dataColors": ["#1E3A8A", "#3B82F6", "#60A5FA", "#93C5FD", "#BFDBFE"],
+  "background": "#F9FAFB",
+  "foreground": "#111827",
+  "tableAccent": "#1E3A8A",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "title": [
+          {
+            "fontSize": 14,
+            "fontFamily": "Segoe UI",
+            "color": "#111827"
+          }
+        ],
+        "labels": [
+          {
+            "color": "#374151",
+            "fontSize": 11
+          }
+        ],
+        "background": [
+          {
+            "color": "#FFFFFF",
+            "transparency": 0
+          }
+        ]
+      }
+    }
+  }
+}
