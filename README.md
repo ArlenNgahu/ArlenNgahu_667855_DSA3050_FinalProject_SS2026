@@ -1,175 +1,151 @@
 # Advanced Power BI Analytical Solution
 
-## Student Information
-- Name: Arlen Ngahu
-- Admission Number: 667855
-- Course Code: DSA 3050A
-- Unit: Advanced Power BI
+## 1. Student Information
+- Name: Arlen Ngahu 
+- Admission Number: 667855 
+- Course Code: DSA 3050A  
+
 
 ---
 
-## Project Overview
+## 2. Project Overview
 
-In this project, I developed an advanced Power BI analytical solution within the E-commerce domain. I focused on analyzing sales performance, customer behavior, and product trends to support data-driven decision-making.
+In this project, I developed an advanced Power BI analytical solution within the E-commerce domain. I focused on analyzing sales performance, customer behavior, and product trends to generate meaningful business insights.
 
-I approached this project as a real-world business intelligence scenario, where I transformed raw data into meaningful insights through data cleaning, modeling, and visualization.
-
----
-
-## Problem Statement
-
-The objective of this project was to analyze transactional and customer data to answer key business questions, including:
-
-- Which products and categories generate the most revenue?
-- How does sales performance change over time?
-- Who are the most valuable customers?
-- What patterns exist in customer purchasing behavior?
-
-The goal was to provide actionable insights that can improve business performance and decision-making.
+I approached this project as a real-world business intelligence scenario, where I transformed raw transactional data into a structured data model and interactive dashboard. The final solution enables users to explore performance trends, identify key revenue drivers, and make informed decisions.
 
 ---
 
-## Dataset Description
+## 3. Problem Statement
 
-I used an open-source E-commerce dataset obtained from Kaggle. The dataset consists of multiple related tables, including:
+The objective of this project was to analyze E-commerce data to answer key business questions, including:
 
-- Orders  
-- Order Items  
-- Products  
-- Users  
-- Reviews  
+- Which products and categories contribute the most to total revenue?  
+- How does revenue vary across different time periods?  
+- Who are the most valuable customers?  
+- What patterns exist in customer purchasing behavior?  
 
-The dataset contains both categorical and numerical variables, as well as date fields suitable for time-based analysis. It is sufficiently large and complex to support advanced Power BI analysis.
-
----
-
-## Tools Used
-
-- Power BI (Data Modeling, DAX, Visualization)
-- Power Query (Data Cleaning and Transformation)
-- GitHub (Version Control and Documentation)
+The goal was to generate actionable insights that can improve business performance, optimize product strategies, and support data-driven decision-making.
 
 ---
 
-## Steps Followed
+## 4. Dataset Description
 
-### 1. Data Acquisition
+I used an open-source E-commerce dataset obtained from Kaggle. The dataset consists of multiple related tables representing different aspects of an online retail system.
+
+The key tables include:
+
+- **Orders**: Contains high-level transaction details such as Order ID, User ID, Order Date, and Order Status  
+- **Order Items**: Contains detailed product-level transaction data, including Product ID, Quantity, and Price  
+- **Products**: Provides product details such as Product Name and Category  
+- **Users**: Contains customer-related information  
+- **Reviews** (optional): Includes product ratings and feedback  
+
+The dataset is suitable for advanced analysis because it contains both transactional and descriptive data, supports relational modeling, and includes time-based fields.
+
+---
+
+## 5. Tools Used
+
+- **Power BI** – Data modeling, DAX calculations, and dashboard creation  
+- **Power Query** – Data cleaning and transformation  
+- **GitHub** – Version control and project documentation  
+
+---
+
+## 6. Steps Followed
+
+### Data Acquisition
 I imported multiple tables into Power BI and explored their structure and relationships.
 
-### 2. Data Cleaning and Transformation
-I performed several transformations, including:
+### Data Cleaning and Transformation
+I performed several data preparation steps, including:
 - Removing unnecessary columns  
 - Handling missing values  
 - Correcting data types  
 - Removing duplicates  
-- Merging tables  
-- Creating custom columns (e.g., Revenue)  
-- Extracting date components  
+- Creating a Revenue column (Price × Quantity)  
+- Extracting date components such as Year and Month  
 - Standardizing categorical values  
 
-These steps ensured data quality and consistency.
+### Data Modeling
+I structured the data using a star schema, with:
+- A central fact table (Order Items)  
+- Dimension tables (Products, Users, Date)  
+
+I created a Date table and established relationships to support time intelligence analysis.
+
+### DAX Calculations
+I created measures to calculate revenue, growth, rankings, and cumulative performance.
+
+### Dashboard Development
+I designed a multi-page dashboard to present insights in a structured and interactive format.
 
 ---
 
-### 3. Data Modeling
-I designed a star schema with:
-- A central fact table (transactional data)
-- Multiple dimension tables (Products, Users, Date)
+## 7. Dashboard Features
 
-I also created a Date table to support time intelligence analysis.
+The dashboard includes the following features:
 
----
-
-### 4. DAX Measures and Calculations
-
-I created several DAX measures and calculated columns, including:
-
-- Total Revenue  
-- Total Orders  
-- Total Quantity  
-- Distinct Customers  
-- Year-to-Date Revenue  
-- Growth Percentage  
-- Product Ranking  
-- Revenue Contribution  
-- Running Revenue  
-
-These measures enabled deeper analysis and insight generation.
+- Interactive slicers for filtering data by date, category, and location  
+- Drill-down capabilities for detailed analysis (Category → Product)  
+- Cross-filtering between visuals  
+- Time-based analysis using a Date table  
+- Multiple pages for different analytical perspectives  
+- Advanced visuals such as decomposition trees, treemaps, and combo charts  
 
 ---
 
-### 5. Dashboard Design
+## 8. Key DAX Measures
 
-I developed a three-page interactive dashboard:
+The following DAX measures were created to support analysis:
 
-#### Executive Summary
-- KPI cards (Revenue, Orders, Customers)
-- Revenue trend over time
-- Category comparison
-- Interactive slicers
+- **Total Revenue** = SUM of Revenue  
+- **Total Orders** = DISTINCTCOUNT of Order ID  
+- **Total Quantity** = SUM of Quantity  
+- **Distinct Customers** = DISTINCTCOUNT of User ID  
+- **Running Revenue** = Cumulative revenue over time  
+- **Growth Percentage** = Change in revenue across periods  
+- **Product Ranking** = Ranking products based on revenue  
+- **Revenue Contribution** = Proportion of total revenue  
 
-#### Detailed Analysis
-- Drill-down charts (Category → Product)
-- Matrix for product performance
-- Decomposition tree for revenue breakdown
-
-#### Insights & Performance
-- Growth analysis
-- Top/bottom performing products
-- Revenue distribution visuals
+These measures enabled deeper insights into performance and trends.
 
 ---
 
-## Dashboard Features
+## 9. Key Insights
 
-- Interactive slicers for filtering data
-- Drill-down capabilities for deeper analysis
-- Cross-filtering between visuals
-- Time intelligence analysis
-- Clean and consistent design
+From my analysis, I identified several important insights:
 
----
+- Revenue is highly concentrated among a few products, including **Willow Result, Astra Pull, and Willow Special**  
+- **Electronics** is the dominant category, outperforming others by approximately **2 million in revenue**  
+- **Groceries** is the lowest-performing category  
+- **Low-value transactions account for 85.16%**, while **high-value transactions account for 14.84%**  
+- Revenue peaks in **July (1,136,289.63)** and is lowest in **December (566,118.90)**  
+- Customer behavior is dominated by frequent low-value purchases  
 
-## Key Insights
-
-From my analysis, I identified the following:
-
-- Revenue is concentrated among a small number of products  
-- Certain categories consistently outperform others  
-- Sales show seasonal trends over time  
-- A small group of customers contributes significantly to revenue  
-- Growth fluctuates across different periods  
+These insights highlight key performance drivers and areas for improvement.
 
 ---
 
-## Recommendations
+## 10. Challenges Encountered
 
-Based on these insights, I recommend:
+During this project, I encountered several challenges:
 
-- Focusing on top-performing products to maximize revenue  
-- Improving underperforming categories through strategic adjustments  
-- Targeting high-value customers with personalized strategies  
-- Leveraging seasonal trends for marketing and inventory planning  
-
----
-
-## Challenges Encountered
-
-During this project, I encountered several challenges, including:
-
+- Incorrect Date table relationships, which caused issues in time-based analysis  
+- DAX measures (such as Running Revenue) returning incorrect results  
 - Handling missing and inconsistent data  
-- Ensuring correct relationships in the data model  
-- Debugging DAX calculations  
-- Fixing issues with time-based visualizations  
+- Ensuring proper data modeling using a star schema  
+- Fixing visualization issues such as flat line charts  
 
-I addressed these challenges through careful data validation and iterative improvements.
-
----
-
-## Conclusion
-
-This project demonstrates my ability to work with raw data, transform it into a structured model, and generate meaningful insights using Power BI.
-
-The final solution provides a comprehensive analytical dashboard that supports informed decision-making and highlights key business opportunities.
+I resolved these challenges through debugging, restructuring the data model, and validating calculations.
 
 ---
+
+## 11. Conclusion
+
+This project demonstrates my ability to clean, transform, model, and analyze data using Power BI.
+
+The final dashboard provides meaningful insights into sales performance, customer behavior, and product trends. It supports data-driven decision-making and highlights opportunities for improving business performance.
+
+Overall, this project reflects my understanding of advanced Power BI concepts, including data modeling, DAX, and interactive dashboard design.
