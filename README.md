@@ -4,6 +4,9 @@
 - Name: Arlen Ngahu 
 - Admission Number: 667855 
 - Course Code: DSA 3050A  
+- Kaggle Dataset Link: (https://www.kaggle.com/datasets/abhayayare/e-commerce-dataset)  
+- GitHub Repository: (https://github.com/ArlenNgahu/ArlenNgahu_667855_DSA3050_FinalProject_SS2026)  
+
 
 
 ## 2. Project Overview
@@ -138,3 +141,4 @@ This project demonstrates my ability to clean, transform, model, and analyze dat
 The final dashboard provides meaningful insights into sales performance, customer behavior, and product trends. It supports data-driven decision-making and highlights opportunities for improving business performance.
 
 Overall, this project reflects my understanding of advanced Power BI concepts, including data modeling, DAX, and interactive dashboard design.
+
