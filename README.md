@@ -6,15 +6,12 @@
 - Course Code: DSA 3050A  
 
 
----
-
 ## 2. Project Overview
 
 In this project, I developed an advanced Power BI analytical solution within the E-commerce domain. I focused on analyzing sales performance, customer behavior, and product trends to generate meaningful business insights.
 
 I approached this project as a real-world business intelligence scenario, where I transformed raw transactional data into a structured data model and interactive dashboard. The final solution enables users to explore performance trends, identify key revenue drivers, and make informed decisions.
 
----
 
 ## 3. Problem Statement
 
@@ -27,7 +24,6 @@ The objective of this project was to analyze E-commerce data to answer key busin
 
 The goal was to generate actionable insights that can improve business performance, optimize product strategies, and support data-driven decision-making.
 
----
 
 ## 4. Dataset Description
 
@@ -43,7 +39,6 @@ The key tables include:
 
 The dataset is suitable for advanced analysis because it contains both transactional and descriptive data, supports relational modeling, and includes time-based fields.
 
----
 
 ## 5. Tools Used
 
@@ -51,7 +46,6 @@ The dataset is suitable for advanced analysis because it contains both transacti
 - **Power Query** – Data cleaning and transformation  
 - **GitHub** – Version control and project documentation  
 
----
 
 ## 6. Steps Followed
 
@@ -81,7 +75,6 @@ I created measures to calculate revenue, growth, rankings, and cumulative perfor
 ### Dashboard Development
 I designed a multi-page dashboard to present insights in a structured and interactive format.
 
----
 
 ## 7. Dashboard Features
 
@@ -94,7 +87,6 @@ The dashboard includes the following features:
 - Multiple pages for different analytical perspectives  
 - Advanced visuals such as decomposition trees, treemaps, and combo charts  
 
----
 
 ## 8. Key DAX Measures
 
@@ -111,7 +103,6 @@ The following DAX measures were created to support analysis:
 
 These measures enabled deeper insights into performance and trends.
 
----
 
 ## 9. Key Insights
 
@@ -126,7 +117,6 @@ From my analysis, I identified several important insights:
 
 These insights highlight key performance drivers and areas for improvement.
 
----
 
 ## 10. Challenges Encountered
 
@@ -140,7 +130,6 @@ During this project, I encountered several challenges:
 
 I resolved these challenges through debugging, restructuring the data model, and validating calculations.
 
----
 
 ## 11. Conclusion
 
